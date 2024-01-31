@@ -1,0 +1,304 @@
+:root {
+    --slate-gray: #6C757D;
+    --smoke: #141010;
+    --snow: #F9F4F4;
+    --stray-gold: #FFBD59;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+
+video#bgvid {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* Send to back */
+    z-index: -100;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Specific to this particular image */
+    video#bgvid {
+        /* Set up proportionate scaling */
+        width: auto;
+        height: 115%;
+
+        top: 0;
+        left: 50%;
+        margin-left: -512px; /* 50% */
+
+        /* Send to back */
+        z-index: -100;
+    }
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:hover,
+.navbar-toggler:active,
+.navbar-toggler-icon::after {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    transition: transform 0.3s ease-in-out;
+    height: 1.75em;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler-icon-close {
+    transform: translate3d(0px, 12px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-22.5deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+#clickWrapper {
+    cursor: pointer;
+    height: 40px;
+    width: 50px;
+}
+
+.menu {
+    position: absolute;
+    background-color: var(--smoke);
+    width: 50px;
+    height: 5px;
+    margin-top: 15px;
+}
+
+.animate.menu {
+    animation-name: menu-menu;
+    animation-duration: 0.3s;
+}
+
+@keyframes menu-menu {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    50% {
+        width: 0px;
+        height: 0px;
+    }
+    51% {
+        position: absolute;
+        background-color: var(--smoke);
+        width: 50px;
+        height: 5px;
+    }
+}
+
+.menu:after {
+    content: "";
+    position: absolute;
+    background-color: var(--smoke);
+    width: 50px;
+    height: 5px;
+    margin-top: -15px;
+    left: 0;
+}
+
+.animate.menu:after {
+    animation-name: menu-after;
+    animation-duration: 0.3s;
+    left: 0;
+}
+
+@keyframes menu-after {
+    0% {
+        transform: rotate(-45deg);
+        margin-top: 0px;
+    }
+    50% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+    100% {
+        transform: rotate(0deg);
+        margin-top: -15px;
+    }
+}
+
+.menu:before {
+    content: "";
+    position: absolute;
+    background-color: var(--smoke);
+    width: 50px;
+    height: 5px;
+    margin-top: 15px;
+    left: 0;
+}
+
+.animate.menu:before {
+    animation-name: menu-before;
+    animation-duration: 0.3s;
+    left: 0;
+}
+
+@keyframes menu-before {
+    0% {
+        transform: rotate(45deg);
+        margin-top: 0px;
+    }
+    50% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+    100% {
+        transform: rotate(0deg);
+        margin-top: 15px;
+    }
+}
+
+/* menu end */
+
+/* close start */
+.close {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+.close.animate {
+    animation-name: close-close;
+    animation-duration: 0.3s;
+}
+
+@keyframes close-close {
+    0% {
+        position: absolute;
+        background-color: var(--smoke);
+        width: 50px;
+        height: 5px;
+        margin-top: 15px;
+    }
+    50% {
+        display: none;
+        width: 50px;
+        height: 5px;
+    }
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+.close:after {
+    content: "";
+    position: absolute;
+    background-color: var(--snow);
+    width: 50px;
+    height: 5px;
+    transform: rotate(45deg);
+    left: 0;
+}
+
+.animate.close:after {
+    animation-name: close-after;
+    animation-duration: 0.3s;
+    left: 0;
+}
+
+@keyframes close-after {
+    0% {
+        transform: rotate(0deg);
+        margin-top: 15px;
+    }
+    50% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+.close:before {
+    content: "";
+    position: absolute;
+    background-color: var(--snow);
+    width: 50px;
+    height: 5px;
+    transform: rotate(-45deg);
+}
+
+.animate.close:before {
+    animation-name: close-before;
+    animation-duration: 0.3s;
+    left: 0;
+}
+
+@keyframes close-before {
+    0% {
+        transform: rotate(0deg);
+        margin-top: -15px;
+    }
+    50% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.show {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: var(--stray-gold);
+    font-size: 28px;
+    display: inline-block;
+    letter-spacing: 6px;
+}
+
+.nav-icon, .nav-icon path {
+    height: 56px;
+    margin: 0 10px;
+}
+
+.music-icon {
+    height: 56px;
+    margin: 0 10px;
+}
+
+.offcanvas {
+    --bs-offcanvas-width: 100vw;
+    --bs-offcanvas-transition: transform 0.3s ease-in-out;
+    --bs-offcanvas-bg: var(--smoke);
+    --bs-offcanvas-zindex: -10;
+}
+
+.offcanvas-backdrop {
+    display: none;
+}
+
+li.nav-item {
+    margin: 10px auto;
+}
