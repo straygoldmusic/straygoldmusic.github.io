@@ -6,10 +6,10 @@
 }
 
 body {
-    font-family: "Roboto Mono", monospace;
+    font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: normal;
     font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 h1, h2, h3, h4, h5 {
@@ -18,6 +18,14 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 6px;
 }
 
+subhead {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
 
 video#bgvid {
     /* Set rules to fill background */
@@ -293,6 +301,8 @@ video#bgvid {
     --bs-offcanvas-transition: transform 0.3s ease-in-out;
     --bs-offcanvas-bg: var(--smoke);
     --bs-offcanvas-zindex: -10;
+    --bs-offcanvas-border-width: 0;
+    --bs-offcanvas-border: none;
 }
 
 .offcanvas-backdrop {
