@@ -35,7 +35,8 @@
         <a class="navbar-brand" href="#">
             <img src="img/Logo_lg.svg" alt="Bootstrap" height="100">
         </a>
-        <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        <div id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+             data-bs-target="#offcanvasNavbar"
              aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <!--            <span class="navbar-toggler-icon"></span>-->
             <div id="clickWrapper" class="navbar-toggler-icon">
@@ -55,11 +56,13 @@
                     <li class="nav-item">
                         <!-- TODO: Add link -->
                         <a class="nav-link" aria-current="page" href="#" target="_blank">
-                            <img class="nav-icon" src="img/icons/spotify.svg" alt="Listen to Stray Gold music on Spotify">
+                            <img class="nav-icon" src="img/icons/spotify.svg"
+                                 alt="Listen to Stray Gold music on Spotify">
                         </a>
                         <!-- TODO: Add link -->
                         <a class="nav-link" aria-current="page" href="#" target="_blank">
-                            <img class="nav-icon" src="img/icons/apple.svg" alt="Listen to Stray Gold music on Apple Music">
+                            <img class="nav-icon" src="img/icons/apple.svg"
+                                 alt="Listen to Stray Gold music on Apple Music">
                         </a>
                     </li>
                     <li class="nav-item">
@@ -68,7 +71,8 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="https://www.instagram.com/straygoldmusic/"
                            target="_blank">
-                            <img class="nav-icon" src="img/icons/instagram.svg" alt="Follow Stray Gold music on Instagram">
+                            <img class="nav-icon" src="img/icons/instagram.svg"
+                                 alt="Follow Stray Gold music on Instagram">
                         </a>
                         <a class="nav-link" aria-current="page" href="https://www.tiktok.com/@straygoldmusic"
                            target="_blank">
@@ -77,7 +81,8 @@
                         <a class="nav-link" aria-current="page"
                            href="https://www.facebook.com/profile.php?id=61555336232443&mibextid=LQQJ4d"
                            target="_blank">
-                            <img class="nav-icon" src="img/icons/facebook.svg" alt="Follow Stray Gold music on Facebook">
+                            <img class="nav-icon" src="img/icons/facebook.svg"
+                                 alt="Follow Stray Gold music on Facebook">
                         </a>
                     </li>
                     <li class="nav-item">
@@ -133,11 +138,6 @@
                     height="152" frameBorder="0" allowfullscreen=""
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
-            <!--    <iframe style="border-radius:12px"-->
-            <!--            src="https://open.spotify.com/embed/album/6hLNjR2PFGjT1rXFQbEfdi?utm_source=generator&theme=0"-->
-            <!--            width="100%" height="352" frameBorder="0" allowfullscreen=""-->
-            <!--            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"-->
-            <!--            loading="lazy"></iframe>-->
         </div>
     </div>
 </div>
@@ -174,8 +174,8 @@
             </p>
         </div>
     </div>
-    <div class="row text-white py-5 pt-0">
-        <div class="col-lg-6 offset-lg-3 col-sm-12 px-5 text-center">
+    <div class="row text-white py-5 pt-0 justify-content-center">
+        <div class="col-12 px-5 text-center">
             <!-- TODO: Add link -->
             <a class="music-icon" href="#" target="_blank">
                 <img class="music-icon" src="img/icons/spotify.svg" alt="Listen to Stray Gold music on Spotify">
@@ -184,6 +184,27 @@
             <a class="music-icon" href="#" target="_blank">
                 <img class="music-icon" src="img/icons/apple.svg" alt="Listen to Stray Gold music on Apple Music">
             </a>
+        </div>
+    </div>
+    <div id="footer" class="row text-white py-5">
+        <div class="px-5 pt-5 text-center">
+            <script>
+                user = 'straygoldmusic';
+                site = 'gmail.com';
+                document.write('<a href=\"mailto:' + user + '@' + site + '\" target="_blank"><h4>CONTACT</h4></a>');
+            </script>
+            <a href="https://www.instagram.com/straygoldmusic/" target="_blank"><h4>INSTAGRAM</h4></a>
+            <a href="https://www.facebook.com/profile.php?id=61555336232443&mibextid=LQQJ4d" target="_blank"><h4>
+                FACEBOOK</h4></a>
+        </div>
+        <div class="px-5 pt-5 text-center">
+            <p>Photography by David Sprayberry</p>
+            <p>
+                <script>
+                    let currentYear = new Date().getFullYear();
+                    document.write('© Stray Gold ' + currentYear);
+                </script>
+            </p>
         </div>
     </div>
 </div>

@@ -24,6 +24,7 @@ subhead {
 }
 
 a {
+    color: var(--stray-gold);
     text-decoration: none;
 }
 
