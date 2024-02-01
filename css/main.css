@@ -106,12 +106,12 @@ video#bgvid {
 
 @keyframes menu-menu {
     0% {
-        width: 0px;
-        height: 0px;
+        width: 0;
+        height: 0;
     }
     50% {
-        width: 0px;
-        height: 0px;
+        width: 0;
+        height: 0;
     }
     51% {
         position: absolute;
@@ -140,11 +140,11 @@ video#bgvid {
 @keyframes menu-after {
     0% {
         transform: rotate(-45deg);
-        margin-top: 0px;
+        margin-top: 0;
     }
     50% {
         transform: rotate(0deg);
-        margin-top: 0px;
+        margin-top: 0;
     }
     100% {
         transform: rotate(0deg);
@@ -171,11 +171,11 @@ video#bgvid {
 @keyframes menu-before {
     0% {
         transform: rotate(45deg);
-        margin-top: 0px;
+        margin-top: 0;
     }
     50% {
         transform: rotate(0deg);
-        margin-top: 0px;
+        margin-top: 0;
     }
     100% {
         transform: rotate(0deg);
@@ -211,8 +211,8 @@ video#bgvid {
         height: 5px;
     }
     100% {
-        width: 0px;
-        height: 0px;
+        width: 0;
+        height: 0;
     }
 }
 
@@ -239,7 +239,7 @@ video#bgvid {
     }
     50% {
         transform: rotate(0deg);
-        margin-top: 0px;
+        margin-top: 0;
     }
     100% {
         transform: rotate(45deg);
@@ -268,7 +268,7 @@ video#bgvid {
     }
     50% {
         transform: rotate(0deg);
-        margin-top: 0px;
+        margin-top: 0;
     }
     100% {
         transform: rotate(-45deg);
