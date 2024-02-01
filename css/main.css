@@ -10,6 +10,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    background-color: var(--smoke);
 }
 
 h1, h2, h3, h4, h5 {
@@ -28,38 +29,52 @@ a {
     text-decoration: none;
 }
 
-video#bgvid {
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 1024px;
-
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    /* Send to back */
+.hero-image-background {
     z-index: -100;
+    height: 100svh;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 1024px) {
-    /* Specific to this particular image */
-    video#bgvid {
-        /* Set up proportionate scaling */
-        width: auto;
-        height: 115svh;
+.hero-video {
+    width: 100%;
+    height: 100%;
+}
 
-        top: 0;
-        left: 50svw;
-        margin-left: -512px; /* 50% */
+.w-background-video {
+    /*height: 500px;*/
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
 
-        /* Send to back */
-        z-index: -100;
-    }
+.w-background-video > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -100;
+    background-position: 50%;
+    background-size: cover;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 .navbar-toggler,

@@ -45,9 +45,6 @@
         </div>
         <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
              aria-labelledby="offcanvasNavbarLabel">
-            <!--            <div class="offcanvas-header py-4 my-5">-->
-            <!--                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>-->
-            <!--            </div>-->
             <div class="offcanvas-body navbar-nav flex-grow-1 pe-3" style="padding-top: 156px; padding-bottom: 156px;">
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
@@ -96,27 +93,7 @@
                             document.write('<img class="nav-icon" src="img/icons/envelope-solid.svg" alt="Email Stray Gold music">');
                             document.write('</a>');
                         </script>
-                        <!--                        <a class="nav-link" aria-current="page" href="#" target="_blank">-->
-                        <!--                            <img class="nav-icon" src="img/envelope-solid.svg">-->
-                        <!--                        </a>-->
                     </li>
-                    <!--                    <li class="nav-item">-->
-                    <!--                        <a class="nav-link" href="#">Link</a>-->
-                    <!--                    </li>-->
-                    <!--                    <li class="nav-item dropdown">-->
-                    <!--                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"-->
-                    <!--                           aria-expanded="false">-->
-                    <!--                            Dropdown-->
-                    <!--                        </a>-->
-                    <!--                        <ul class="dropdown-menu">-->
-                    <!--                            <li><a class="dropdown-item" href="#">Action</a></li>-->
-                    <!--                            <li><a class="dropdown-item" href="#">Another action</a></li>-->
-                    <!--                            <li>-->
-                    <!--                                <hr class="dropdown-divider">-->
-                    <!--                            </li>-->
-                    <!--                            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-                    <!--                        </ul>-->
-                    <!--                    </li>-->
                 </ul>
             </div>
         </div>
@@ -209,10 +186,14 @@
     </div>
 </div>
 
-<video playsinline autoplay muted loop poster="img/Stupid_Answers_Canvas.png" id="bgvid">
-    <source src="img/Stupid_Answers_Canvas.mp4" type="video/mp4">
-    <!--    <source src="/images/Maximal%20-%20LIVE%20Trimmed%20BW.webm" type="video/webm">-->
-</video>
+<div class="hero-image-background">
+    <div class="hero-video w-background-video">
+        <video playsinline autoplay muted loop poster="img/Stupid_Answers_Bkg.png" id="bgvid">
+            <source src="img/Stupid_Answers_Bkg_Video.mp4" type="video/mp4">
+            <source src="img/Stupid_Answers_Bkg_Video.webm" type="video/webm">
+        </video>
+    </div>
+</div>
 
 <script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
